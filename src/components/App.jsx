@@ -145,6 +145,7 @@ const App = () => {
       .then(updatedImages => {
         setImages(images => [...images, ...updatedImages]);
       })
+      .catch(error => setError(error))
       .finally(() => {
         setIsLoading(false);
       });
