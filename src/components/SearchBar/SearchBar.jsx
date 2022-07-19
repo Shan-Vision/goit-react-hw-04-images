@@ -19,7 +19,6 @@ const SearchBar = ({ onSubmit }) => {
   const handleSubmitForm = event => {
     event.preventDefault();
     onSubmit(query);
-    console.log(disabled);
     setDisabled(true);
   };
 
